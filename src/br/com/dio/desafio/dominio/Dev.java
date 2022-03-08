@@ -45,7 +45,8 @@ public class Dev {
         this.conteudosInscritos = conteudosInscritos;
     }
 
-    public Set<Conteudo> conteudosConcluidos() {
+    public Set<Conteudo> getConteudosConcluidos() {
+
         return conteudosConcluidos;
     }
 
@@ -53,12 +54,14 @@ public class Dev {
         this.conteudosConcluidos = conteudoConcluidos;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dev dev = (Dev) o;
-        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudoConcluidos, dev.conteudoConcluidos);
+        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
 
     @Override
@@ -66,6 +69,4 @@ public class Dev {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
 
-    public String conteudosConcluidos() {
-    }
 }

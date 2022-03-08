@@ -36,26 +36,26 @@ public class Main {
         Dev devCamila = new Dev();
         devCamila.setNome("Camila");
         devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos:" + devCamila.getConteudosInscritos());
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
         devCamila.progredir();
         devCamila.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Conluídos:" + devCamila.get);
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+        System.out.println("Conteúdos Conluídos Camila:" + devCamila.getConteudosConcluidos());
         System.out.println("XP:" + devCamila.calcularTotalXp());
 
         System.out.println("---------------");
 
         Dev devLeandro = new Dev();
         devLeandro.setNome("Leandro");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos:" + devLeandro.getConteudosInscritos());
+        devLeandro.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Leandro:" + devLeandro.getConteudosInscritos());
         devLeandro.progredir();
         devLeandro.progredir();
         devLeandro.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos:" + devLeandro.getConteudosInscritos());
-        System.out.println("Conteúdos Conluídos:" + devLeandro.getConteudosConcluidos());
+        System.out.println("Conteúdos Inscritos Leandro:" + devLeandro.getConteudosInscritos());
+        System.out.println("Conteúdos Conluídos: Leandro" + devLeandro.getConteudosConcluidos());
         System.out.println("XP:" + devLeandro.calcularTotalXp());
     }
 }
